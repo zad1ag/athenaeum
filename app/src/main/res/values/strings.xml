@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Athenaeum</string>
+    <string name="widget_moon_desc">Current moon phase</string>
+    <string name="card_detail_title">Card</string>
+    <string name="draw_cards">Draw Cards</string>
+    <string name="single_card">Single Card</string>
+    <string name="three_card">Three Cards</string>
+    <string name="celtic_cross">Celtic Cross</string>
+</resources>

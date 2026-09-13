@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget theme: bridges Material3 dynamic colors (Material You) into
+         RemoteViews on Android 12+, falls back to fixed palette below. -->
+    <style name="Theme.MoonWidget" parent="android:Theme.DeviceDefault.DayNight">
+        <item name="android:colorAccent">@color/widget_accent</item>
+    </style>
+
+    <style name="TextAppearance.Moon.Title" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/widget_accent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/widget_shadow</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="TextAppearance.Moon.Sub" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/widget_sub</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:shadowColor">@color/widget_shadow</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+</resources>
