@@ -57,9 +57,9 @@ object FeatureSettings {
         prefs(context).edit().putBoolean(KEY_WIDGET_BACKGROUND, enabled).apply()
     }
 
-    /** Material You (wallpaper) dynamic color. Default on. */
+    /** Material You (wallpaper) dynamic color. Default off — the wine/ink theme is the identity. */
     fun isDynamicColorEnabled(context: Context): Boolean =
-        prefs(context).getBoolean(KEY_DYNAMIC_COLOR, true)
+        prefs(context).getBoolean(KEY_DYNAMIC_COLOR, false)
 
     fun setDynamicColorEnabled(context: Context, enabled: Boolean) {
         prefs(context).edit().putBoolean(KEY_DYNAMIC_COLOR, enabled).apply()
