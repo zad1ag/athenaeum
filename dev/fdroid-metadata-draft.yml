@@ -1,0 +1,55 @@
+Categories:
+  - Games
+  - Reading
+
+License: GPL-3.0-or-later
+AuthorName: Reggie
+AuthorEmail: zad1ag@proton.me
+SourceCode: https://github.com/zad1ag/athenaeum
+IssueTracker: https://github.com/zad1ag/athenaeum/issues
+
+Name: Athenaeum
+Summary: Offline occult companion — tarot, astrology, spirits, and magic
+Description: |-
+    An occult companion app. Fully offline and local: all data lives in a SQLite
+    database on your device, owned entirely by a Rust core. No analytics, no
+    tracking, no network calls.
+
+    * Browse the complete 78-card Rider-Waite-Smith tarot deck with upright and
+      reversed meanings, keywords, and contextual meanings by situation
+    * Daily astrology: planetary day, sun and moon signs, moon illumination, and
+      the next sign ingress
+    * Moon phase home screen widget and a lunar calendar
+    * Natal charts: enter a birth profile and get placements, retrogrades,
+      houses, and aspects
+    * A bestiary of 39 entities and 205 deities with offerings, searchable, with
+      Wikipedia links
+    * A grimoire of 32 spells, 26 Icelandic magical staves, and the Elder
+      Futhark runes with bindrune uses
+    * Everything is editable: rename entries, rewrite meanings, add your own, or
+      delete builtins and restore them later
+    * Per-feature toggles so you can hide what you don't use
+    * Full backup and restore as a single file
+    * Wine-and-ink theme, with optional Material You wallpaper colors
+    * The Rust core builds from source for all four Android ABIs; no
+      prebuilt binaries or network code
+
+AutoName: Athenaeum
+RepoType: git
+Repo: https://github.com/zad1ag/athenaeum.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 3
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: 27.2.12479018
+    gradleprops:
+      - -PandroidInjectedBuild=true
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 3
