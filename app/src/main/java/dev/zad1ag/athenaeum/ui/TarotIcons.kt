@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 fun tarotIconResource(cardId: Int): Int = when (cardId) {
     0 -> R.drawable.tarot_00_the_fool

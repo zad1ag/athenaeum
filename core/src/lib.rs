@@ -389,7 +389,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeInit(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeInit(
         mut env: JNIEnv,
         _class: JClass,
         db_path: JString,
@@ -413,7 +413,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllCards<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllCards<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -429,7 +429,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetCard<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetCard<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -446,7 +446,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetUserName<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetUserName<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -462,7 +462,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSetUserName<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSetUserName<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         name: JString,
@@ -479,7 +479,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetMajorArcana<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetMajorArcana<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -495,7 +495,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetCardsBySuit<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetCardsBySuit<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         suit_idx: i32,
@@ -519,7 +519,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAppSetting<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAppSetting<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         key: JString,
@@ -537,7 +537,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSetAppSetting<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSetAppSetting<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         key: JString,
@@ -556,7 +556,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllEntities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllEntities<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -572,7 +572,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetEntity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetEntity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -589,7 +589,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetEntitiesByType<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetEntitiesByType<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         type_idx: i32,
@@ -616,7 +616,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSearchEntities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSearchEntities<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         query: JString,
@@ -634,7 +634,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeAddEntity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeAddEntity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         json: JString,
@@ -655,7 +655,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeUpdateEntity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeUpdateEntity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -677,7 +677,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteEntity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteEntity<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -693,7 +693,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteEntities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteEntities<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         ids_json: JString,
@@ -711,7 +711,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeRestoreBuiltins<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeRestoreBuiltins<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) {
@@ -726,7 +726,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllBirthProfiles<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllBirthProfiles<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -742,7 +742,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSaveBirthProfile<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSaveBirthProfile<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -770,7 +770,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteBirthProfile<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteBirthProfile<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -786,7 +786,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeNatalChart<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeNatalChart<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         json: JString,
@@ -807,7 +807,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllAstroSigns<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllAstroSigns<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -823,7 +823,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAstroSign<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAstroSign<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -840,7 +840,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllAstroBodies<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllAstroBodies<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -856,7 +856,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAstroBody<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAstroBody<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -873,7 +873,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDailyAstro<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDailyAstro<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -889,7 +889,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteAstroEntries<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteAstroEntries<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         sign_ids_json: JString,
@@ -910,7 +910,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllDeities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllDeities<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -926,7 +926,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetDeity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetDeity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -943,7 +943,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetDeitiesByReligion<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetDeitiesByReligion<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         religion: JString,
@@ -961,7 +961,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSearchDeities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSearchDeities<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         query: JString,
@@ -979,7 +979,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeAddDeity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeAddDeity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         json: JString,
@@ -1000,7 +1000,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeUpdateDeity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeUpdateDeity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1022,7 +1022,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteDeity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteDeity<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1038,7 +1038,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteDeities<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteDeities<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         ids_json: JString,
@@ -1056,7 +1056,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetOfferingsByDeity<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetOfferingsByDeity<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         deity_id: i32,
@@ -1073,7 +1073,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllOfferings<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllOfferings<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -1089,7 +1089,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetOffering<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetOffering<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1106,7 +1106,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSearchOfferings<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSearchOfferings<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         query: JString,
@@ -1124,7 +1124,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeAddOffering<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeAddOffering<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         json: JString,
@@ -1145,7 +1145,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeUpdateOffering<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeUpdateOffering<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1167,7 +1167,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteOffering<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteOffering<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1183,7 +1183,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllSpells<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllSpells<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -1199,7 +1199,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetSpell<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetSpell<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1216,7 +1216,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetSpellsByCategory<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetSpellsByCategory<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         category_idx: i32,
@@ -1254,7 +1254,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSearchSpells<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSearchSpells<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         query: JString,
@@ -1272,7 +1272,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeAddSpell<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeAddSpell<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         json: JString,
@@ -1293,7 +1293,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteSpell<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteSpell<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1309,7 +1309,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeDeleteSpells<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeDeleteSpells<'local>(
         mut _env: JNIEnv<'local>,
         _class: JClass<'local>,
         ids_json: JString,
@@ -1327,7 +1327,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeUpdateSpell<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeUpdateSpell<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1349,7 +1349,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetAllStaves<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetAllStaves<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
     ) -> jstring {
@@ -1365,7 +1365,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetStave<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetStave<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,
@@ -1382,7 +1382,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeGetStavesByCategory<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeGetStavesByCategory<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         category: JString,
@@ -1400,7 +1400,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeSearchStaves<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeSearchStaves<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         query: JString,
@@ -1418,7 +1418,7 @@ mod android {
 
     #[allow(unused_mut)]
     #[no_mangle]
-    pub extern "C" fn Java_dev_reggie_tarot_TarotCore_nativeUpdateStave<'local>(
+    pub extern "C" fn Java_dev_zad1ag_athenaeum_TarotCore_nativeUpdateStave<'local>(
         mut env: JNIEnv<'local>,
         _class: JClass<'local>,
         id: i32,

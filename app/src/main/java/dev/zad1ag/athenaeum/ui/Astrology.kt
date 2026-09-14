@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

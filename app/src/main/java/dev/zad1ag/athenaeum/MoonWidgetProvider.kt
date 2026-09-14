@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager

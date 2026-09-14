@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import android.content.Intent
 import android.net.Uri
@@ -96,7 +96,7 @@ import java.util.Locale
 import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
-import dev.reggie.tarot.ui.AppTabRow
+import dev.zad1ag.athenaeum.ui.AppTabRow
 
 
 enum class MoonPhase {
@@ -639,7 +639,7 @@ fun TarotScreen(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp)
             )
             if (isSearching) {
-                dev.reggie.tarot.SearchHeader(
+                dev.zad1ag.athenaeum.SearchHeader(
                     query = searchQuery,
                     onQueryChange = { searchQuery = it },
                     onClose = {

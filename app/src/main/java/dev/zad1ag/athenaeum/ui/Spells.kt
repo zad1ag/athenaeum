@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -72,9 +72,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import dev.reggie.tarot.ui.AppTabRow
-import dev.reggie.tarot.ui.FloatingPillTabs
-import dev.reggie.tarot.ui.SelectionModeBar
+import dev.zad1ag.athenaeum.ui.AppTabRow
+import dev.zad1ag.athenaeum.ui.FloatingPillTabs
+import dev.zad1ag.athenaeum.ui.SelectionModeBar
 
 sealed class SpellFilter(val label: String) {
     object All : SpellFilter("All")

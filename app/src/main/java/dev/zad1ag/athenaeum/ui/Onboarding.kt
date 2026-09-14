@@ -1,8 +1,8 @@
-package dev.reggie.tarot.ui
+package dev.zad1ag.athenaeum.ui
 
 import android.content.Intent
-import dev.reggie.tarot.R
-import dev.reggie.tarot.TarotApp
+import dev.zad1ag.athenaeum.R
+import dev.zad1ag.athenaeum.TarotApp
 import android.net.Uri
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

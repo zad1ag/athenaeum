@@ -1,4 +1,4 @@
-package dev.reggie.tarot.ui
+package dev.zad1ag.athenaeum.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row

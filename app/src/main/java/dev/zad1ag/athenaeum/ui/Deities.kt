@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import android.content.Intent
 import android.net.Uri
@@ -78,8 +78,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import dev.reggie.tarot.ui.AppTabRow
-import dev.reggie.tarot.ui.SelectionModeBar
+import dev.zad1ag.athenaeum.ui.AppTabRow
+import dev.zad1ag.athenaeum.ui.SelectionModeBar
 
 sealed class ReligionFilter(val label: String) {
     object All : ReligionFilter("All")

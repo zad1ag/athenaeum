@@ -1,4 +1,4 @@
-package dev.reggie.tarot
+package dev.zad1ag.athenaeum
 
 import android.os.Build
 import android.os.Bundle
@@ -38,9 +38,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import dev.reggie.tarot.BuildConfig
-import dev.reggie.tarot.ui.NatalChartScreen
-import dev.reggie.tarot.ui.OnboardingScreen
+import dev.zad1ag.athenaeum.BuildConfig
+import dev.zad1ag.athenaeum.ui.NatalChartScreen
+import dev.zad1ag.athenaeum.ui.OnboardingScreen
 
 // Palette anchors: wine #5C1F2B (primary family), ink #1A1A22 (neutral family).
 private val Wine = Color(0xFF5C1F2B)

@@ -1,4 +1,4 @@
-package dev.reggie.tarot.ui
+package dev.zad1ag.athenaeum.ui
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -38,11 +38,11 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
-import dev.reggie.tarot.BirthProfile
-import dev.reggie.tarot.NatalAspect
-import dev.reggie.tarot.NatalChart
-import dev.reggie.tarot.Placement
-import dev.reggie.tarot.TarotApp
+import dev.zad1ag.athenaeum.BirthProfile
+import dev.zad1ag.athenaeum.NatalAspect
+import dev.zad1ag.athenaeum.NatalChart
+import dev.zad1ag.athenaeum.Placement
+import dev.zad1ag.athenaeum.TarotApp
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
