@@ -41,7 +41,7 @@ Repo: https://github.com/zad1ag/athenaeum.git
 Builds:
   - versionName: 1.0.0
     versionCode: 3
-    commit: 3532043
+    commit: v1.0.0
     subdir: app
     gradle:
       - yes
