@@ -98,6 +98,8 @@ cargo {
     libname = 'tarot_core'
     apiLevel = 26
     targets = ['arm64', 'arm', 'x86', 'x86_64']
+    // The plugin defaults to the cargo debug profile even for release builds.
+    profile = 'release'
     extraCargoBuildArguments = ['--package', 'tarot-core']
 }
 
