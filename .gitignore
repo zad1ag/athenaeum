@@ -35,3 +35,6 @@ keystore.properties
 core/Cargo.lock
 !core/Cargo.toml
 graphify-out/
+
+# Local working drafts (F-Droid prep etc.) — not part of the app
+dev/
